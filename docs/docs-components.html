@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Material pro - vuetify powerfull admin template made with vuejs</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/prism/prism.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin1">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin1">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span> </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link waves-effect waves-light text-white"
+                                href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Getting
+                                    Started</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="documentation.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Documentation</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-getting-started.html" aria-expanded="false"><i
+                                    class="far fa-circle"></i><span class="hide-menu">Getting
+                                    Started</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Customization</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-theme-settings.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Theme
+                                    Setting</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-color-settings.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Color
+                                    Setting</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-icon-setting.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Icon
+                                    Setting</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Development</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-routing.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Routing</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-routing-layout.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Routing
+                                    Layout</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-theme-breadcrumb.html" aria-expanded="false"><i
+                                    class="far fa-circle"></i><span class="hide-menu">Theme Breadcrumb</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-deployment.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Deployment</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Framework - Layout</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-grid.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Grid</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Framework - Theme</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-colors.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Colors</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-icons.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Icon</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Components</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-components.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Components</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-form-elements.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Form
+                                    Elements</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-tables.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Tables</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+
+                <div id="components">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><span class="badge badge-info mr-3">Components</span> </h4>
+                            <hr>
+                            <h4 class="card-title">1. Alert</h4>
+                            <h6 class="card-subtitle">The v-alert component is used to convey important information to
+                                the user through the use contextual types icons and
+                                color. These default types come in in 4 variations: success, info, warning, and error.
+                                Default icons are assigned which
+                                help represent different actions each type portrays. Many parts of an alert such as
+                                border, icon, and color can also be
+                                customized to fit almost any situation.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/alerts/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/alerts/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/alerts/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">2. Application</h4>
+                            <h6 class="card-subtitle">In Vuetify, the v-app component and the app prop on components
+                                like v-navigation-drawer, v-app-bar, v-footer and more,
+                                help bootstrap your application with the proper sizing around <v-content> component.
+                                    This allows you to create truly
+                                    unique interfaces without the hassle of managing your layout sizing. The v-app
+                                    component is REQUIRED for all
+                                    applications. This is the mount point for many of Vuetify's components and
+                                    functionality and ensures that it
+                                    propagates the default application variant (dark/light) to children components and
+                                    also ensures proper cross-browser
+                                    support for certain click events in browsers like Safari. v-app should only be used
+                                    within your application ONCE.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/application/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/application/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/application/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">3. Aspect Ratios</h4>
+                            <h6 class="card-subtitle">The v-responsive component can be used to fix any section to a
+                                specific aspect ratio</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/aspect-ratios/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/aspect-ratios/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/aspect-ratios/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">4. Avatars</h4>
+                            <h6 class="card-subtitle">The v-avatar component is typically used to display circular user
+                                profile pictures. This component will allow you to
+                                dynamically size and add a border radius of responsive images, icons, and text. A tile
+                                variation is available for
+                                displaying an avatar without border radius.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/avatars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/avatars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/avatars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">5. Badges</h4>
+                            <h6 class="card-subtitle">The v-badge component superscripts or subscripts an avatar-like
+                                icon or text onto content to highlight information to a
+                                user or to just draw attention to a specific element. Content within the badge usually
+                                contains numbers or icons.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/badges/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/badges/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/badges/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">6. Banners</h4>
+                            <h6 class="card-subtitle">The v-banner component is used as middle-interruptive message to
+                                user with 1-2 actions. It comes in 2 variations,
+                                single-line and multi-line (implicit). These can have icons which you can use with your
+                                message and actions.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/banners/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/banners/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/banners/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">7. App Bars</h4>
+                            <h6 class="card-subtitle">The v-app-bar component is pivotal to any graphical user interface
+                                (GUI), as it generally is the primary source of site
+                                navigation. The app-bar component works great in conjunction with a v-navigation-drawer
+                                for providing site navigation in
+                                your application.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/app-bars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/app-bars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/app-bars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+
+                            <h4 class="card-title">8. Toolbars</h4>
+                            <h6 class="card-subtitle">The v-toolbar component is pivotal to any gui, as it generally is
+                                the primary source of site navigation. The toolbar
+                                component works great in conjunction with v-navigation-drawer and v-card.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/toolbars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/toolbars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/toolbars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">9. System bars</h4>
+                            <h6 class="card-subtitle">The v-system-bar component can be used for displaying statuses to
+                                the user. It looks like the Android system bar and can
+                                contain icons, spacers, and some text.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/system-bars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/system-bars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/system-bars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">10. Bottom navigation</h4>
+                            <h6 class="card-subtitle">The v-bottom-navigation is an alternative to the sidebar. It is
+                                primarily used on mobile and comes in two variants,
+                                icons and text, and shift.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/bottom-navigation/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/bottom-navigation/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/bottom-navigation/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">11. Bottom sheets</h4>
+                            <h6 class="card-subtitle">The bottom sheet is a modified v-dialog that slides from the
+                                bottom of the screen, similar to a v-bottom-navigation.
+                                Whereas a bottom navigation component is for buttons and specific application level
+                                actions, a bottom sheet can contain
+                                anything.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/bottom-sheets/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/bottom-sheets/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/bottom-sheets/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">12. Breadcrumbs</h4>
+                            <h6 class="card-subtitle">The v-breadcrumbs component is a navigational helper for pages. It
+                                can accept a Material Icons icon or text characters
+                                as a divider. An array of objects can be passed to the items property of the component.
+                                Additionally, slots exists for
+                                more control of the breadcrumbs, either utilizing v-breadcrumbs-item or other custom
+                                markup.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/breadcrumbs/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/breadcrumbs/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/breadcrumbs/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">13. Buttons</h4>
+                            <h6 class="card-subtitle">The v-btn component replaces the standard html button with a
+                                material design theme and a multitude of options. Any color
+                                helper class can be used to alter the background or text color.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/buttons/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/buttons/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/buttons/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">14. Buttons: Floating Action Button</h4>
+                            <h6 class="card-subtitle">The v-btn component can be used as a floating action button. This
+                                provides an application with a main point of action.
+                                Combined with the v-speed-dial component, you can create a diverse set of functions
+                                available for your users.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/floating-action-buttons/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/floating-action-buttons/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/floating-action-buttons/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+
+
+                            <h4 class="card-title">15. Calendars</h4>
+                            <h6 class="card-subtitle">The v-calendar component is used to display information in a
+                                daily, weekly, or monthly view. The daily view has slots
+                                for all day or timed elements, and the weekly and monthly view has a slot for each day.
+                                Optionally you can pass in an
+                                array of events and they will be rendered over the appropriate days and times.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/calendars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/calendars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/calendars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">16. Cards</h4>
+                            <h6 class="card-subtitle">The v-card component is a versatile component that can be used for
+                                anything from a panel to a static image. The card
+                                component has numerous helper components to make markup as easy as possible. Components
+                                that have no listed options use
+                                Vue's functional component option for faster rendering and serve as markup sugar to make
+                                building easier.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/cards/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/cards/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/cards/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">17. Carousels</h4>
+                            <h6 class="card-subtitle">The v-carousel component is used to display large numbers of
+                                visual content on a rotating timer.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/carousels/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/carousels/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/carousels/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">18. Chips</h4>
+                            <h6 class="card-subtitle">The v-chip component is used to convey small pieces of
+                                information. Using the close property, the chip becomes
+                                interactive, allowing user interaction. This component is used by the v-chip-group for
+                                advanced selection options.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/chips/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/chips/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/chips/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">19. Dialogs</h4>
+                            <h6 class="card-subtitle">The v-dialog component inform users about a specific task and may
+                                contain critical information, require decisions, or
+                                involve multiple tasks. Use dialogs sparingly because they are interruptive.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/dialogs/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/dialogs/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/dialogs/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">20. Dividers</h4>
+                            <h6 class="card-subtitle">The v-divider component is used to separate sections of lists or
+                                layouts.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/dividers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/dividers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/dividers/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">21. Expansion panels</h4>
+                            <h6 class="card-subtitle">The v-expansion-panel component is useful for reducing vertical
+                                space with large amounts of information. The default
+                                functionality of the component is to only display one expansion-panel body at a time;
+                                however, with the multiple
+                                property, the expansion-panel can remain open until explicitly closed.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/expansion-panels/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/expansion-panels/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/expansion-panels/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr>
+                            <h4 class="card-title">22. Footers</h4>
+                            <h6 class="card-subtitle">The v-footer component is used for displaying general information
+                                that a user might want to access from any page within
+                                your site. </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/footer/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/footer/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/footer/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">23. Button groups</h4>
+                            <h6 class="card-subtitle">The v-btn-toggle component is a simple wrapper for v-item-group
+                                built specifically to work with v-btn.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/button-groups/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/button-groups/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/button-groups/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">24. Chip groups</h4>
+                            <h6 class="card-subtitle">The v-chip-group supercharges the v-chip component by providing
+                                groupable functionality. It is used for creating groups
+                                of selections using chips.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/chip-groups/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/chip-groups/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/chip-groups/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">25. Item groups</h4>
+                            <h6 class="card-subtitle">The v-item-group provides the ability to create a group of
+                                selectable items out of any component. This is the baseline
+                                functionality for components such as v-tabs and v-carousel.</h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/item-groups/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/item-groups/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/item-groups/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">25. List item groups</h4>
+                            <h6 class="card-subtitle">The v-list-item-group provides the ability to create a group of
+                                selectable v-list-items. The v-list-item-group component
+                                utilizes v-item-group at its core to provide a clean interface for interactive lists
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/list-item-groups/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/list-item-groups/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/list-item-groups/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">26. Slide groups</h4>
+                            <h6 class="card-subtitle">The v-slide-group component is used to display pseudo paginated
+                                information. It uses v-item-group at its core and
+                                provides a baseline for components such as v-tabs and v-chip-group.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/slide-groups/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/slide-groups/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/slide-groups/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">27. Windows</h4>
+                            <h6 class="card-subtitle">The v-window component provides the baseline functionality for
+                                transitioning content from 1 pane to another. Other
+                                components such as v-tabs, v-carousel and v-stepper utilize this component at their
+                                core.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/windows/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/windows/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/windows/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">28. Hover</h4>
+                            <h6 class="card-subtitle">The v-hover component provides a clean interface for handling
+                                hover states for any component.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/hover/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/hover/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/hover/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">29. Icons</h4>
+                            <h6 class="card-subtitle">The v-icon component provides a large set of glyphs to provide
+                                context to various aspects of your application. For a
+                                list of all available icons, visit the official Material Design Icons page. To use any
+                                of these icons simply use the
+                                mdi- prefix followed by the icon name.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/icons/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/icons/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/icons/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">30. Images</h4>
+                            <h6 class="card-subtitle">The v-img component is packed with features to support rich media.
+                                Combined with the vuetify-loader, you can add dynamic
+                                progressive images to provide a better user experience.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/images/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/images/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/images/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">31. Lazy loading</h4>
+                            <h6 class="card-subtitle">The v-lazy component is used to dynamically load components based
+                                upon an elements visiblity.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/lazy/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/lazy/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/lazy/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">32. Lists</h4>
+                            <h6 class="card-subtitle">The v-list component is used to display information. It can
+                                contain an avatar, content, actions, subheaders and much
+                                more. Lists present content in a way that makes it easy to identify a specific item in a
+                                collection. They provide a
+                                consistent styling for organizing groups of text and images.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/lists/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/lists/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/lists/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">33. Menus</h4>
+                            <h6 class="card-subtitle">The v-menu component shows a menu at the position of the element
+                                used to activate it.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/menus/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/menus/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/menus/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">34. Navigation drawers</h4>
+                            <h6 class="card-subtitle">The v-navigation-drawer component is what your users will utilize
+                                to navigate through the application. The
+                                navigation-drawer is pre-configured to work with or without vue-router right out the
+                                box. For the purpose of display,
+                                some examples are wrapped in a v-card element. Within your application you will
+                                generally place the v-navigation-drawer
+                                as a direct child of v-app.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/navigation-drawers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/navigation-drawers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/navigation-drawers/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">35. Overlays</h4>
+                            <h6 class="card-subtitle">The v-overlay component is used to provide emphasis on a
+                                particular element or parts of it. It signals to the user of a
+                                state change within the application and can be used for creating loaders, dialogs and
+                                more.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/overlays/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/overlays/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/overlays/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">36. Paginations</h4>
+                            <h6 class="card-subtitle">The v-pagination component is used to separate long sets of data
+                                so that it is easier for a user to consume information.
+                                Depending on the length provided, the pagination component will automatically scale. To
+                                maintain the current page,
+                                simply supply a v-model attribute.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/paginations/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/paginations/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/paginations/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">37. Parallax</h4>
+                            <h6 class="card-subtitle">The v-parallax component creates a 3d effect that makes an image
+                                appear to scroll slower than the window.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/parallax/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/parallax/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/parallex/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">38. Color pickers</h4>
+                            <h6 class="card-subtitle">The v-color-picker allows you to select a color using a variety of
+                                input methods.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/color-pickers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/color-pickers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/color-pickers/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">39. Date/month pickers</h4>
+                            <h6 class="card-subtitle">The v-date-picker is stand-alone component that can be utilized in
+                                many existing Vuetify components. It offers the user
+                                a visual representation for selecting date/month.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/date-pickers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/date-pickers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/date-pickers/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">40. Time pickers</h4>
+                            <h6 class="card-subtitle">The v-time-picker is stand-alone component that can be utilized in
+                                many existing Vuetify components. It offers the user
+                                a visual representation for selecting the time.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/time-pickers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/time-pickers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/time-pickers/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">41. Progress circular</h4>
+                            <h6 class="card-subtitle">The v-progress-circular component is used to convey data
+                                circularly to users. It also can be put into an indeterminate
+                                state to portray loading.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/progress-circular/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/progress-circular/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/progress-circular/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">42. Progress linear</h4>
+                            <h6 class="card-subtitle">The v-progress-linear component is used to convey data visually to
+                                users. They can also represent an indeterminate
+                                amount, such as loading or processing.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/progress-linear/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/progress-linear/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/progress-linear/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">43.Ratings</h4>
+                            <h6 class="card-subtitle">The rating component is a specialized but crucial piece in
+                                building user widgets. Collecting user feedback via ratings
+                                is a simple analytic that can provide a lot of feedback to your product or application.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/ratings/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/ratings/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/ratings/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">44. Sheets</h4>
+                            <h6 class="card-subtitle">The v-sheet is designed to power other paper components within
+                                Vuetify. It is meant to be used as a low level component.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/sheets/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/sheets/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/sheets/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">45. Skeleton loaders</h4>
+                            <h6 class="card-subtitle">The v-skeleton-loader component is a versatile tool that can fill
+                                many roles within a project. At its heart, the
+                                component provides an indication to the user that something is coming but not yet
+                                available. There are over 30
+                                pre-defined options available that can be combined to make custom examples.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/skeleton-loaders/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/skeleton-loaders/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/skeleton-loaders/" width="100%"
+                                    height="450" style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">46. Snackbars</h4>
+                            <h6 class="card-subtitle">The v-snackbar component is used to display a quick message to a
+                                user. Snackbars support positioning, removal delay, and
+                                callbacks.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/snackbars/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/snackbars/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/snackbars/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">47. Sparklines</h4>
+                            <h6 class="card-subtitle">The sparkline component can be used to create simple graphs, like
+                                GitHub's contribution chart.
+                                Any SVG attribute may be used in addition to the ones listed below.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/sparklines/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/sparklines/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/sparklines/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">48. Steppers</h4>
+                            <h6 class="card-subtitle">The v-stepper component displays progress through numbered steps.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/steppers/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/steppers/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/steppers/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">49. Subheaders</h4>
+                            <h6 class="card-subtitle">The v-subheader component is used to separate sections of lists.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/subheaders/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/subheaders/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/subheaders/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">50. Tabs</h4>
+                            <h6 class="card-subtitle">The v-tabs component is used for hiding content behind a
+                                selectable item. This can also be used as a pseudo-navigation
+                                for a page, where the tabs are links and the tab-items are the content.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a href="https://vuetifyjs.com/en/components/tabs/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/tabs/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/tabs/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">51. Timelines</h4>
+                            <h6 class="card-subtitle">The v-timeline is useful for stylistically displaying
+                                chronological information.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/timelines/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/timelines/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/timelines" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">52. Tooltips</h4>
+                            <h6 class="card-subtitle">The v-tooltip component is useful for conveying information when a
+                                user hovers over an element. You can also
+                                programmatically control the display of tooltips through a v-model. When activated,
+                                tooltips display a text label
+                                identifying an element, such as a description of its function.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/tooltips/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/tooltips/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/tooltips/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+                            <hr />
+                            <h4 class="card-title">53. Treeview</h4>
+                            <h6 class="card-subtitle">The v-treeview component is useful for displaying large amounts of
+                                nested data.
+                            </h6>
+                            <div class="p-3 bg-light">
+                                <span class="mr-2">Link Here:</span><a
+                                    href="https://vuetifyjs.com/en/components/treeview/"
+                                    class="mt-3">https://vuetifyjs.com/en/components/treeview/</a>
+                                <iframe src="https://vuetifyjs.com/en/components/treeview/" width="100%" height="450"
+                                    style="border:0px" class="border mt-4" height="200"></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Page Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2020 Materialpro Vuetify admin by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/popper.js/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/libs/prism/prism.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

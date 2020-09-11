@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Material pro - vuetify powerfull admin template made with vuejs</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/prism/prism.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin1">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin1">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span> </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link waves-effect waves-light text-white"
+                                href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Getting
+                                    Started</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="documentation.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Documentation</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-getting-started.html" aria-expanded="false"><i
+                                    class="far fa-circle"></i><span class="hide-menu">Getting
+                                    Started</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Customization</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-theme-settings.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Theme
+                                    Setting</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-color-settings.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Color
+                                    Setting</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-icon-setting.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Icon
+                                    Setting</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Development</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-routing.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Routing</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-routing-layout.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Routing
+                                    Layout</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-theme-breadcrumb.html" aria-expanded="false"><i
+                                    class="far fa-circle"></i><span class="hide-menu">Theme Breadcrumb</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-deployment.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Deployment</span></a>
+                        </li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Framework - Layout</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-grid.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Grid</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Framework - Theme</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-colors.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Colors</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-icons.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Icon</span></a></li>
+                        <li class="sidebar-item">
+                            <div class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i><span
+                                    class="hide-menu">Vuetify
+                                    Components</span></div>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-components.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Components</span></a>
+                        </li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark"
+                                href="docs-form-elements.html" aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Form
+                                    Elements</span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark" href="docs-tables.html"
+                                aria-expanded="false"><i class="far fa-circle"></i><span
+                                    class="hide-menu">Tables</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+
+                <div id="getting-started">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><span class="badge badge-info mr-3">Getting Started</span> Libraries
+                            </h4>
+                            <hr />
+                            <h6 class="card-subtitle text-muted font-weight-normal">
+                                We have used this libraries to develop a Materialpro Vuetify Admin
+                                Template. Before get started with this template let you know that which are the
+                                libraries we have used in this template.
+                            </h6>
+                            <div class="border border-muted my-3">
+                                <h5 class="card-title border-bottom p-3 bg-light mb-0">
+                                    <i class="mdi mdi-numeric-1-box-multiple-outline font-18 mr-2"></i>VueJs
+                                </h5>
+                                <p class="card-subtitle text-muted p-3 mb-0">
+                                    VueJS is a progressive framework for building
+                                    user interfaces. Vuexy Admin template is build upon VueJS. It is mandatory to
+                                    know what is VueJS, If you don't know what is VueJS and how to use it, we highly
+                                    recommend learninng VueJS before proceeding.
+                                </p>
+                            </div>
+
+                            <div class="border border-muted mb-3">
+                                <h5 class="card-title border-bottom p-3 bg-light mb-0">
+                                    <i class="mdi mdi-numeric-2-box-multiple-outline font-18 mr-2"></i>VueCLI
+                                </h5>
+                                <p class="card-subtitle text-muted p-3 mb-0">
+                                    Vue CLI is a full system for rapid Vue.js
+                                    development. Vue CLI aims to be the standard tooling baseline for the Vue
+                                    ecosystem.
+                                </p>
+                            </div>
+
+                            <div class="border border-muted mb-3">
+                                <h5 class="card-title border-bottom p-3 bg-light mb-0">
+                                    <i class="mdi mdi-numeric-3-box-multiple-outline font-18 mr-2"></i>Vuetify
+                                </h5>
+                                <p class="card-subtitle text-muted p-3 mb-0">
+                                    Vuetify is a library of Vuejs components that
+                                    facilitates front-end development. It is beautifully designed and pleasant
+                                    looking framework.
+                                </p>
+                            </div>
+
+                            <h4 class="card-title pt-4">Getting Started</h4>
+                            <hr />
+
+                            <div class="alert alert-info rounded-lg">
+                                <span class="font-medium">Note:</span> we
+                                recomonded you to please make your one own css file &amp; and add that
+                                in your page, so whenever the update of Materialpro Vuetify admin comes it does not
+                                affect
+                                your
+                                code.
+                            </div>
+                            <div class="bg-light p-3 mt-3">
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-1-box-multiple-outline mr-2"></i>
+                                    </span> Go to the downloaded package
+                                </h6>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-2-box-multiple-outline mr-2"></i>
+                                    </span>Install
+                                    Node.js From
+                                    <a href="https://nodejs.org/en/download/"
+                                        target="_blank">https://nodejs.org/en/download/</a> [Please install recommended
+                                    version]
+                                </h6>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-3-box-multiple-outline mr-2"></i>
+                                    </span>After
+                                    that open command promt or any other terminal and go to Package Path.
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <p class="mb-0">cd [root] / package /</p>
+                                </div>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-4-box-multiple-outline mr-2"></i>
+                                    </span>Npm is a
+                                    default package manager for the JavaScript runtime environment Node.js. If
+                                    you've already then update once.
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <p class="mb-0">npm install --global npm@latest</p>
+                                </div>
+                                <div class="ml-md-4 mt-md-3 alert alert-info p-0 rounded-0">
+                                    <div class="bg-info mb-0 text-white p-2">
+                                        <p class="mb-0">To check weather is node succesfully install or not.</p>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="mb-0">npm --version</h5>
+                                    </div>
+                                </div>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-5-box-multiple-outline mr-2"></i>
+                                    </span>For yarn
+                                    package manager.
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <p class="mb-0">npm install --global yarn</p>
+                                </div>
+                                <div class="ml-md-4 mt-md-3 alert alert-info p-0 rounded-0">
+                                    <div class="bg-info mb-0 text-white p-2">
+                                        <p class="mb-0">To check weather is yarn succesfully install or not.</p>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="mb-0">yarn --version</h5>
+                                    </div>
+                                </div>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-6-box-multiple-outline mr-2"></i>
+                                    </span>Install
+                                    VueCLI Globally.
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <p class="mb-0">npm install -g @vue/cli</p>
+                                </div>
+                                <div class="ml-md-4 mt-md-3 alert alert-info p-0 rounded-0">
+                                    <div class="bg-info mb-0 text-white p-2">
+                                        <p class="mb-0">For Yarn command is here</p>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="mb-0">yarn global add @vue/cli</h5>
+                                    </div>
+                                </div>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-7-box-multiple-outline mr-2"></i>
+                                    </span>once you download the package, please extract the zip and you will get this
+                                    folders:
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <h6 class="font-weight-normal">
+                                        <i class="mdi mdi-folder-outline mr-2 text-success"></i>documentation
+                                    </h6>
+                                    <h6 class="font-weight-normal mt-3">
+                                        <i class="mdi mdi-folder-outline mr-2 text-success"></i>landingpage
+                                    </h6>
+                                    <h6 class="font-weight-normal mt-3">
+                                        <i class="mdi mdi-folder-outline mr-2 text-success"></i>packages
+                                    </h6>
+                                </div>
+                                <div class="alert alert-info rounded-lg mt-4">
+                                    Now, Go to
+                                    <span class="badge badge-info px-2 py-1 rounded-lg">packages</span> folder and
+                                    choose
+                                    <span class="badge badge-info px-2 py-1 rounded-lg">main or starterkit</span>
+                                    demo and do
+                                    <span class="badge badge-dark px-2 py-1 rounded-lg">npm install</span>.
+                                </div>
+                                <hr />
+                                <h6>
+                                    <span class="font-16">
+                                        <i class="mdi mdi-numeric-8-box-multiple-outline mr-2"></i>
+                                    </span>To run
+                                    the templates locally run below command in to your terminal. Open
+                                    http://localhost:8080 to view it in the browser. The page will automatically
+                                    reload if you make changes to the code.
+                                </h6>
+                                <div class="bg-dark p-2 ml-md-4 mt-md-3 text-white rounded-lg shadow">
+                                    <p class="mb-0">npm run serve</p>
+                                </div>
+                                <div class="alert alert-warning mt-4 rounded-lg">
+                                    <span class="font-medium">Note:</span>
+                                    Sometimes
+                                    app may run on different port than
+                                    <span class="badge badge-pill badge-light border border-warning">8080</span>. To
+                                    be sure, You can check correct address in console right after label
+                                    <span class="badge badge-pill badge-light border border-warning">
+                                        App running
+                                        at:
+                                    </span>
+                                    .
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Page Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2020 Materialpro Vuetify admin by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/popper.js/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/libs/prism/prism.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
